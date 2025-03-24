@@ -48,7 +48,7 @@ const yazi2 ="PİZZA, DOYURUR";
 function Home() {
   const history = useHistory();
   const yonlendir = () => {
-    history.push('/order-pizza'); // Hedef sayfanın yolunu belirtin
+    history.push('/order-pizza'); 
   };
   return (
     <ArkaPlan>
