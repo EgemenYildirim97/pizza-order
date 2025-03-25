@@ -1,9 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Secimler = styled.div`
+display:flex;
+Justify-content:space-around;
+
+gap:2rem;
+`;
+
+const BoyutSec = styled.div`
+display:flex;
+flex-direction:column;
+gap:1rem;
+
+`;
+const HamurSec = styled.div`
+
+`;
 
 function Secenekler({ urun, seciliBoyut, setSeciliBoyut, seciliHamur, setSeciliHamur }) {
   return (
-    <div>
-      <div>
+    <Secimler>
+      <BoyutSec>
         <h3>Boyut Seç</h3>
         {urun.boyutlar.map((boyut) => (
           <label key={boyut}>
@@ -16,8 +34,8 @@ function Secenekler({ urun, seciliBoyut, setSeciliBoyut, seciliHamur, setSeciliH
             {boyut}
           </label>
         ))}
-      </div>
-      <div>
+      </BoyutSec>
+      <HamurSec>
         <h3>Hamur Seç</h3>
         <select value={seciliHamur} onChange={(e) => setSeciliHamur(e.target.value)}>
           {urun.hamurlar.map((hamur) => (
@@ -26,8 +44,8 @@ function Secenekler({ urun, seciliBoyut, setSeciliBoyut, seciliHamur, setSeciliH
             </option>
           ))}
         </select>
-      </div>
-    </div>
+      </HamurSec>
+    </Secimler>
   );
 }
 

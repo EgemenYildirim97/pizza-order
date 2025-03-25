@@ -22,7 +22,7 @@ const urun = {
       { ad: "Mısır", secili: false ,fiyat:5},
       { ad: "Sucuk", secili: false ,fiyat:5},
       { ad: "Kanada Jambonu", secili: false ,fiyat:5},
-      { ad: "Sucuk", secili: false,fiyat:5},
+      { ad: "Ton Balığı", secili: false,fiyat:5},
       { ad: "Ananas", secili: false,fiyat:5},
       { ad: "Tavuk Izgara", secili: false ,fiyat:5},
       { ad: "Jalepeno", secili: false ,fiyat:5},

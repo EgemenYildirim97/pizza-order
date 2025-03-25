@@ -59,6 +59,9 @@ const SiparisToplam = styled.div`
   h3 {
     
   }
+  p{
+  color:#292929;
+  }
   span {
   color:red;
   text

@@ -4,6 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
+body{
+
+font-family: "Roboto Condensed", sans-serif;
+font-optical-sizing: auto;
+font-weight: lighter;
+line-height: 1.2;
+margin: 0;
+padding: 0;
+background-color: white; 
+}
 
 .logo {
   height: 6em;
@@ -17,11 +27,7 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white; /* Arka plan rengini beyaz yapıyoruz */
-}
+
 
 @keyframes logo-spin {
   from {
