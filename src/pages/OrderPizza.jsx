@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../components/Header'
+import HeaderOrder from '../components/HeaderOrder'
 import Main from '../components/Main'
 
 function OrderPizza() {
   return (
     <div>
-      <Header></Header>
+      <HeaderOrder></HeaderOrder>
       <Main></Main>
     </div>
   )

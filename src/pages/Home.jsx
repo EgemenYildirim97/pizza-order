@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 import homeImage from '../images/home-banner.png';
-import headImage from "../images/logo.svg";
+
+import Header from '../components/Header'
 import { useHistory } from 'react-router-dom';
 
 
@@ -15,14 +16,7 @@ background-size: cover;
   height: 100%; 
 
 `; 
-const Baslik = styled.img`
 
-position: absolute;
-top: 60px;
-left: 32vw;
-width:210px;
-heigth:auto;
-`;
 const Slogan = styled.div`
 position: absolute;
 top: 27%; left: 50%;
@@ -54,7 +48,7 @@ function Home() {
   };
   return (
     <ArkaPlan>
-        <Baslik src={headImage} />
+        <Header />
         <Slogan>
           {yazi1}
           <br/>

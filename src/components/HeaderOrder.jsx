@@ -17,12 +17,29 @@ const HeaderContainer = styled.div`
 const Baslik = styled.img`
   margin-top: 50px;
 `;
+const Navigasyon = styled.nav`
+ margin-top: 60px;
+a {
+    color: white;
+    text-decoration: none;
+    
+    font-weight:lighter;
+    
+  }
+    a span{
+    font-weight:bold;
+    }
+`;
 
 function HeaderOrder() {
   return (
     <HeaderContainer>
       <Baslik src ={headImage} />
-      
+      <Navigasyon>
+        <a href="/">Anasayfa -</a>
+        <a href=""> Seçenekler - </a>
+        <a href="/order-pizza"><span>Sipariş Oluştur</span></a>
+      </Navigasyon>
     </HeaderContainer>
   )
 }

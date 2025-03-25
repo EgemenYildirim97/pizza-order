@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Success() {
   return (
-    <div>Success</div>
+    <div>
+      <Header />
+      
+    </div>
   )
 }
 
