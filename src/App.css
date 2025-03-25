@@ -17,6 +17,11 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Arka plan rengini beyaz yapıyoruz */
+}
 
 @keyframes logo-spin {
   from {
