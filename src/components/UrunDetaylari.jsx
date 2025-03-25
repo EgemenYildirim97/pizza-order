@@ -6,7 +6,7 @@ const UrunDetaylariContainer = styled.div`
 `;
 const FiyatDereceYorum = styled.div`
   display: flex;
-  align-items: center;
+  
 `;
 const Fiyat = styled.span`
   font-size: 24px;
@@ -14,7 +14,9 @@ const Fiyat = styled.span`
   margin-right: 20px;
 `;
 const Derece = styled.span`
-  margin-right: 10px;
+  margin-left:350px;
+  margin-right:50px;
+  
 `;
 const YorumSayisi = styled.span`
   color: #888;

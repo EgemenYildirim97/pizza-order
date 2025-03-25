@@ -10,7 +10,7 @@ const HeaderContainer = styled.div`
   top: 0; 
   left: 0;
   width: 100%; 
-  height: 200px; 
+  height: 207px; 
   z-index: 100; 
   
 `;
@@ -36,8 +36,8 @@ function HeaderOrder() {
     <HeaderContainer>
       <Baslik src ={headImage} />
       <Navigasyon>
-        <a href="/">Anasayfa -</a>
-        <a href=""> Seçenekler - </a>
+        <a href="/">Anasayfa - </a>
+        
         <a href="/order-pizza"><span>Sipariş Oluştur</span></a>
       </Navigasyon>
     </HeaderContainer>

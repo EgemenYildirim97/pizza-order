@@ -9,6 +9,7 @@ import { useHistory } from 'react-router-dom';
 const ArkaPlan = styled.div`
 background-image: url(${homeImage});
 background-size: cover;
+ background-position: center;
  position: absolute; 
   top: 0; 
   left: 0;

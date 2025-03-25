@@ -3,15 +3,15 @@ import styled from 'styled-components';
 
 const Secimler = styled.div`
 display:flex;
-Justify-content:space-around;
-
-gap:2rem;
+text-align:left;
+gap:10rem;
 `;
 
 const BoyutSec = styled.div`
 display:flex;
 flex-direction:column;
 gap:1rem;
+text-align:left;
 
 `;
 const HamurSec = styled.div`

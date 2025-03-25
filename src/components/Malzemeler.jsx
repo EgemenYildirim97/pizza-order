@@ -4,17 +4,21 @@ import styled from 'styled-components';
 const MalzemeDiv = styled.div`
   display:flex;
   flex-direction:column;
+  text-align:left;
 
 `;
 
 const MalzemeContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 sütun oluşturuyoruz */
+  gap: 10px;
 `;
 
 const MalzemeItem = styled.div`
   width: 200px; 
   margin-right: 20px; 
+   display: flex;
+  align-items: center;
 `;
 
 function Malzemeler({ urun, seciliMalzemeler, setSeciliMalzemeler }) {

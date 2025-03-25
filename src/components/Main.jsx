@@ -33,16 +33,17 @@ const urun = {
   };
 
 const AnaBilesenContainer = styled.div`
-   max-width: 1200px;
-  margin-top:110px;
-  padding: 20px;
+  width:532px;
+  margin-top:238px ;
+  margin-left:10%;
+  padding: 20px 0;
   background-color: white;
   color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  display: fixed; // Flexbox kullanıyoruz
-  flex-direction: column; // İçeriği dikey olarak sıralıyoruz
-  align-items: center; // İçeriği yatayda ortalıyoruz
+  display: fixed;
+  flex-direction: column;
+  align-items: center;
 `;
 
 
