@@ -8,12 +8,12 @@ import { useHistory } from 'react-router-dom';
 const ArkaPlan = styled.div`
 background-image: url(${homeImage});
 background-size: cover;
- position: fixed; 
+ position: absolute; 
   top: 0; 
   left: 0;
   width: 100%; 
   height: 100%; 
-margin: -40px  50px;
+
 `; 
 const Baslik = styled.img`
 

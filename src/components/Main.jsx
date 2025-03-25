@@ -3,6 +3,8 @@ import UrunDetaylari from './UrunDetaylari';
 import Secenekler from './Secenekler';
 import Malzemeler from './Malzemeler';
 import styled from 'styled-components';
+import SiparisOzeti from './SiparisOzeti';
+
 
 const urun = {
     ad: "Position Absolute Acı Pizza",
@@ -42,93 +44,8 @@ const AnaBilesenContainer = styled.div`
   flex-direction: column; // İçeriği dikey olarak sıralıyoruz
   align-items: center; // İçeriği yatayda ortalıyoruz
 `;
-const SiparisOzetiContainer = styled.div`
- margin-top: 30px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-`;
 
-const SiparisNotu = styled.div`
-  margin-bottom: 20px;
 
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-`;
-const AdetSecimi = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-
-  button {
-    background-color: #ffc107;
-    color: black;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-
-  span {
-    margin: 0 10px;
-  }
-`;
-
-const SiparisToplam = styled.div`
- margin-bottom: 20px;
-`;
-
-const SiparisVerButton = styled.button`
-  background-color: #ffc107;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-`;
-function SiparisOzeti({ siparisNotu, setSiparisNotu, fiyat, seciliMalzemeler, urun}) {
-    const [adet, setAdet] = useState(1);
-    const [secimler, setSecimler] = useState(0);
-    const [toplam, setToplam] = useState(fiyat);
-    useEffect(() => {
-        let malzemeFiyati = 0;
-        seciliMalzemeler.forEach((malzeme) => {
-          const secilenMalzeme = urun.malzemeler.find((m) => m.ad === malzeme);
-          if (secilenMalzeme) {
-            malzemeFiyati += secilenMalzeme.fiyat;
-          }
-        });
-        setSecimler(malzemeFiyati);
-        setToplam((fiyat + malzemeFiyati) * adet);
-      }, [adet, fiyat, seciliMalzemeler, urun.malzemeler]);
-    return (
-        <SiparisOzetiContainer>
-            <SiparisNotu>
-                <h3>Sipariş Notu</h3>
-                <textarea
-                value={siparisNotu}
-                onChange={(e) => setSiparisNotu(e.target.value)}
-                placeholder="Siparişine eklemek istediğin bir not var mı?"
-                />
-            </SiparisNotu>
-            <AdetSecimi>
-                <button onClick={() => setAdet(adet - 1)}>-</button>
-                <span>{adet}</span>
-                <button onClick={() => setAdet(adet + 1)}>+</button>
-            </AdetSecimi>
-            <SiparisToplam>
-                <p>Seçimler: {secimler}₺</p>
-                <p>Toplam: {toplam}₺</p>
-            </SiparisToplam>
-            <SiparisVerButton>SİPARİŞ VER</SiparisVerButton>
-    </SiparisOzetiContainer>
-      );
-    }
 
 function Main() {
     const [seciliBoyut, setSeciliBoyut] = useState(urun.boyutlar[0]);
