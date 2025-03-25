@@ -16,6 +16,7 @@ const SiparisNotu = styled.div`
     border: 1px solid #ccc;
     border-radius: 4px;
     background:white;
+    color:black;
   }
 `;
 
@@ -64,7 +65,7 @@ const SiparisToplam = styled.div`
   }
   span {
   color:red;
-  text
+  font-weight:normal;
   }
 `;
 
@@ -106,7 +107,7 @@ function SiparisOzeti({ siparisNotu, setSiparisNotu, fiyat, seciliMalzemeler, ur
       }, [seciliMalzemeler]);
 
       const handleSiparisVer = () => {
-        history.push('/success'); // "/success" sayfasına yönlendiriyoruz
+        history.push('/success'); 
       };
     return (
       <SiparisOzetiContainer>

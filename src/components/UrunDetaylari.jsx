@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 const UrunDetaylariContainer = styled.div`
   margin-bottom: 20px;
-  text-align: left; // Metni sola hizalıyoruz
+  text-align: left;
 `;
 const FiyatDereceYorum = styled.div`
   display: flex;
-  align-items: center; // Dikeyde ortalıyoruz
+  align-items: center;
 `;
 const Fiyat = styled.span`
   font-size: 24px;

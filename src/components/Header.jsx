@@ -37,7 +37,7 @@ function Header() {
       <Baslik src ={headImage} />
       <Navigasyon>
         <a href="/">Anasayfa -</a>
-        <a href="/secenekler"> Seçenekler -</a>
+        <a href=""> Seçenekler - </a>
         <a href="/order-pizza"><span>Sipariş Oluştur</span></a>
       </Navigasyon>
     </HeaderContainer>

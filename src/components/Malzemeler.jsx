@@ -1,14 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const MalzemeDiv = styled.div`
+  display:flex;
+  flex-direction:column;
+
+`;
+
 const MalzemeContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
 const MalzemeItem = styled.div`
-  width: 200px; // Her malzeme için genişlik ayarla
-  margin-right: 20px; // Malzemeler arasında boşluk bırak
+  width: 200px; 
+  margin-right: 20px; 
 `;
 
 function Malzemeler({ urun, seciliMalzemeler, setSeciliMalzemeler }) {
@@ -22,8 +28,10 @@ function Malzemeler({ urun, seciliMalzemeler, setSeciliMalzemeler }) {
 
   return (
     <div>
+      <MalzemeDiv>
       <h3>Ek Malzemeler</h3>
       <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
+      </MalzemeDiv>
       <MalzemeContainer>
         {urun.malzemeler.map((malzeme) => (
           <MalzemeItem key={malzeme.ad}>
